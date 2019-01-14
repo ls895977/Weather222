@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/baseContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/weatherbg"
+                    android:orientation="vertical">
+                    
+                    <include layout="@layout/view_weather" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@drawable/mglheogalj" />
+
+                    <LinearLayout
+                        android:id="@+id/realWeatherLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:layout_marginTop="3dp"
+                        android:visibility="gone"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:visibility="gone"
+                        android:background="@drawable/mglheogalj"></View>
+
+                    <LinearLayout
+                        android:id="@+id/weekWeatherLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="vertical"
+                        ></LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/mglheogalj"></View>
+
+                <LinearLayout
+                    android:id="@+id/articalLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <com.naran.controls.MnArticalView
+                        android:id="@+id/mnArticalView"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"></com.naran.controls.MnArticalView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@drawable/mglheogalj"></View>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/mglheogalj"></View>
+
+                <LinearLayout
+                    android:id="@+id/majorWeatherLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.naran.controls.NaranButton
+        android:id="@+id/mapBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/map" />
+
+</RelativeLayout>

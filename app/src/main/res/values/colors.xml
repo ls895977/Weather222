@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="article_title_highlight_color">#FF00FF</color>
+    <color name="bar_bg">#58BF0E</color>
+    <color name="bar_bg_press">#DDDDDD</color>
+    <color name="btn_press">#008800</color>
+    <color name="layout">#8858BF0E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#999999</color>
+    <color name="selected">#99CCCC</color>
+    <color name="classificationbg">#FFFFFF</color>
+    <color name="colorRedBg">#fa5148</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent" >
+
+        <com.naran.controls.MnTextView
+            android:id="@+id/nall_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_above="@+id/nall_more_button"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceLarge"/> />
+
+        <Button
+            android:id="@+id/nall_more_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:background="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <com.naran.controls.MnTextView
+        android:id="@+id/nall_title_list_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:text=""
+        android:textSize="21sp"
+        android:textColor="#000"
+        />
+</LinearLayout>

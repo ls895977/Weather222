@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@null"
+    app:datumRatio="datumHeight"
+    app:widthRatio="1.0"
+    app:heightRatio="4.0">
+    <com.naran.controls.GifView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/gifView"/>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.naran.controls.MnTextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="1dp"
+            android:padding="8dp"
+            android:text="111111"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <com.naran.controls.MnTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:text="aaaaaaaaaa"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.naran.controls.MnTextView
+            android:id="@+id/tempercher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="15.7C"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+</net.soulwolf.widget.ratiolayout.widget.RatioRelativeLayout>
